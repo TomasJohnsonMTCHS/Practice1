@@ -1,0 +1,60 @@
+<!doctpype html>
+
+<html>
+    
+  <head>
+    <script>  
+	
+	  function Data() {
+      var Itm = prompt("What's your favorite item");
+         
+	document.getElementById("Itm").innerHTML = "Your favorite item is " + Itm;
+	}
+	
+     function TestGPA() {
+      var GPA = prompt("What is your GPA");
+         
+	document.getElementById("GPA").innerHTML = "Your GPA is " + GPA;
+		
+      if (GPA <= 0) {
+        document.getElementById("College").innerHTML = "Invalid GPA"
+      }	
+      else if (GPA <= 1) {
+        document.getElementById("College").innerHTML = "You have a low college success rate, recomendation of trying Harder"
+      }
+       else if (GPA <= 2) {
+         document.getElementById("College").innerHTML = "If you wish to go to college, try harder in school."
+         
+       }
+	   else if (GPA <= 3) {
+         document.getElementById("College").innerHTML = "Almost there, try harder and school and be sure to study to increase your chances of success."
+         
+       }
+	   else if (GPA < 4) {
+         document.getElementById("College").innerHTML = "Congradulations, with a bit more work you will have a high access rate into colleges."
+         
+       }
+	   	else if (GPA == 4) {
+         document.getElementById("College").innerHTML = "You have a high college success rate."
+         
+       }
+       else {
+         document.getElementById("College").innerHTML = "Invalid GPA"
+         
+       }
+     }
+      
+      
+    </script>
+</head>
+  <body>
+	<button onclick="Data()">Favorite Item</button>
+	<p id="Itm"></p>
+      
+    <button onclick="TestGPA()">What is your GPA?</button>
+	<p id="GPA"></p>
+    <p id="College"></p>
+    
+    
+  </body>
+</html>
